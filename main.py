@@ -27,7 +27,7 @@ class App:
         self.plugins_list = self.plugin_source.list_plugins()
         self.base_analyzer = BaseAnalyzer()
 
-        filename = "./plugins/plugins.cfg"
+        filename = "./config/plugins.cfg"
         self.lines = [line.rstrip('\n') for line in open(filename)]
 
         self.analyzers = []
